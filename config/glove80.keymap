@@ -14,18 +14,3 @@
 
 #include "zmk-helpers/key-labels/glove80.h"
 #include "base.keymap"
-
-#define X_MB    &kp RETURN &sl NAV &sl FN       &none &none &key_repeat
-#define X_RB    &sk LALT
-// #define X_RB    &sk LGUI // Me: Could remove cmd through Karabiner softwar remap of all possible cmd to ctrl
-
-#define X_LH    &sk LALT &kp BSPC &kp MINUS &kp LEFT &kp RIGHT
-#define X_MH    &kp PG_UP &kp PG_DN
-#define X_RH    &kp DOWN &kp UP &kp LEFT_BRACKET &kp PG_DN &kp PG_UP
-
-/* activate bluetooth */
-#define CONFIG_WIRELESS 1
-
-/* source the main keymap */
-#include "base.keymap"
-
