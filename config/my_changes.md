@@ -1,13 +1,28 @@
 # My_changes
 
 ```c
-#define LASSO_COPY &kp LG(LC(LS(N4)))
 
+//replace RET with SPACE
+                                              &lt_spc NAV 0 &lt FN SPACE,   SMART_NUM     MAGIC_SHIFT
 // change numpad benford law
+
+// ============== nav layer additional keys ==============
+/* lassocopy, lower than, greater than */
 
 // nav layer
     ___           ___           ___           LASSO_COPY    ___,   ___           &kp TAB       &kp LT         &kp GT     ___,
 
+
+// ============== remove repaet if last key was an alpha key from the smart shift button ==============
+
+/* ZMK_ADAPTIVE_KEY( */
+/*     shift_repeat, bindings = <&sk LSHFT>; */
+/*     repeat { */
+/*       trigger-keys = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z>; */
+/*       bindings = <&key_repeat>; */
+/*       max-prior-idle-ms = <1200>; */
+/*       strict-modifiers; */
+/*     };) */
 ```
 
 ```config
