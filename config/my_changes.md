@@ -23,6 +23,14 @@
 /*       max-prior-idle-ms = <1200>; */
 /*       strict-modifiers; */
 /*     };) */
+
+// ================= swapper =================
+// make it compatible with macos
+
+// Alt+Tab swapper, requires tri-state module.
+ZMK_TRI_STATE(swapper, bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
+              ignored-key-positions = <LT2>;)
+
 ```
 
 ```config
