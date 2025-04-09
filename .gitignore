@@ -6,3 +6,6 @@ firmware
 zephyr
 zmk
 draw/base.yaml
+
+# Me: 
+.DS_Store

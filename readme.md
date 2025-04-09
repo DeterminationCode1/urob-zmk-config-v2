@@ -1,4 +1,4 @@
-# urob's zmk-config
+# Readme
 
 This is my personal [ZMK firmware](https://github.com/zmkfirmware/zmk/)
 configuration. It consists of a 34-keys base layout that is re-used for various
@@ -19,11 +19,12 @@ The state of the entire firmware is pinned in my `west`
 - Leader key sequences for Unicode input and system commands
 - Arrow-cluster doubles as <kbd>home</kbd>, <kbd>end</kbd>, <kbd>begin/end of
   document</kbd> on long-press
-- Shifted actions that make sense: <kbd>, ↦ ;</kbd>, <kbd>. ↦ :</kbd> and <kbd>?
-  ↦ !</kbd>
+- Shifted actions that make sense: <kbd>, ↦;</kbd>, <kbd>. ↦:</kbd> and <kbd>? ↦
+  !</kbd>
 - Simpler Devicetree syntax using helper macros from
   [zmk-helpers](https://github.com/urob/zmk-helpers)
-- Fully automated, nix-powered [local build environment](#local-build-environment)
+- Fully automated, nix-powered
+  [local build environment](#local-build-environment)
 
 ![](draw/keymap.png)
 ([Click here](https://raw.githubusercontent.com/urob/zmk-config/refs/heads/main/draw/base.svg)
@@ -66,7 +67,7 @@ This is great but there are still a few rough edges:
   `balanced` flavor, this would falsely register `key-1` as a mod. As a remedy,
   I use ZMK's "positional hold-tap" feature to force HRMs to always resolve as
   "tap" when the _next_ key is on the same side of the keyboard. Problem solved.
-- ... or at least almost. By default, positional-hold-tap performs the
+  -... or at least almost. By default, positional-hold-tap performs the
   positional check when the next key is _pressed_. This is not ideal, because it
   prevents combining multiple modifiers on the same hand. To fix this, I use the
   `hold-trigger-on-release` setting, which delays the positional-hold-tap
