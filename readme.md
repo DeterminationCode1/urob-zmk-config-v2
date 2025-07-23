@@ -10,6 +10,9 @@ merged pointer PR. Custom functionality is added through various
 The state of the entire firmware is pinned in my `west`
 [manifest](https://github.com/urob/zmk-config/blob/main/config/west.yml).
 
+The original repo was forked from
+[urob/zmk-config](https://github.com/urob/zmk-config#).
+
 ## Highlights
 
 - ["Timeless" homerow mods](#timeless-homerow-mods)
@@ -434,9 +437,9 @@ remaining issues:
     E.g, if your WPM is 70 or larger, then the default of 150ms (=10500/70)
     should work well. The rule of thumb is based on an average character length
     of 4.7 for English words. Taking into account 1 extra tap for `space`, this
-    yields a minimum `require-prior-idle-ms` of (60 _ 1000) / (5.7 _ x) ≈ 10500
-    / x milliseconds. The approximation errs on the safe side, as in practice
-    home row taps tend to be faster than average.
+    yields a minimum `require-prior-idle-ms` of (60 _1000) / (5.7_ x) ≈ 10500 /
+    x milliseconds. The approximation errs on the safe side, as in practice home
+    row taps tend to be faster than average.
 
 [^4]:
     `nix-direnv` provides a vastly improved caching experience compared to only
